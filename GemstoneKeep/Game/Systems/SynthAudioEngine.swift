@@ -73,7 +73,7 @@ final class SynthAudioEngine {
     private func render(_ preset: SFXPreset) -> AVAudioPCMBuffer {
         switch preset {
         case .gemPickup(let chain):
-            let pitch = 880 + Float(min(chain, 6)) * 55
+            let pitch = Float(880) + Float(min(chain, 6)) * 55
             return tone(frequency: pitch, duration: 0.07, volume: 0.22, wave: .square, decay: 0.92)
         case .jump:
             return sweep(start: 280, end: 620, duration: 0.1, volume: 0.18)
@@ -81,11 +81,11 @@ final class SynthAudioEngine {
             return noiseBurst(duration: 0.28, volume: 0.2)
                 .mixed(with: sweep(start: 420, end: 80, duration: 0.35, volume: 0.24))
         case .levelClear:
-            return arpeggio(notes: [523, 659, 784, 1047], step: 0.09, volume: 0.16)
+            return arpeggio(notes: [523, 659, 784, 1047].map(Float.init), step: 0.09, volume: 0.16)
         case .gameOver:
-            return arpeggio(notes: [392, 330, 262], step: 0.14, volume: 0.18)
+            return arpeggio(notes: [392, 330, 262].map(Float.init), step: 0.14, volume: 0.18)
         case .helmGrab:
-            return arpeggio(notes: [440, 554, 659, 880], step: 0.07, volume: 0.2)
+            return arpeggio(notes: [440, 554, 659, 880].map(Float.init), step: 0.07, volume: 0.2)
         case .enemyDestroy:
             return tone(frequency: 220, duration: 0.05, volume: 0.2, wave: .square, decay: 0.85)
                 .mixed(with: tone(frequency: 110, duration: 0.08, volume: 0.15, wave: .triangle, decay: 0.9))
@@ -119,7 +119,7 @@ final class SynthAudioEngine {
             switch wave {
             case .sine: sample = sin(phase)
             case .square: sample = sin(phase) >= 0 ? 1 : -1
-            case .triangle: sample = 2 * abs(2 * (phase / (2 * .pi) - floor(phase / (2 * .pi) + 0.5))) - 1
+            case .triangle: sample = 2 * abs(2 * (phase / (2 * Float.pi) - floor(phase / (2 * Float.pi) + 0.5))) - 1
             case .noise: sample = Float.random(in: -1...1)
             }
             samples[i] = sample * volume * env
@@ -137,7 +137,7 @@ final class SynthAudioEngine {
             let t = Float(i) / Float(frameCount)
             let freq = start + (end - start) * t
             let omega = 2 * Float.pi * freq / Float(sampleRate)
-            let env = 1 - t * 0.35
+            let env = 1 - t * Float(0.35)
             samples[i] = sin(omega * Float(i)) * volume * env
         }
         return buffer
@@ -156,7 +156,7 @@ final class SynthAudioEngine {
 
         let stepFrames = Int(step * Float(sampleRate))
         for (index, note) in notes.enumerated() {
-            let partial = tone(frequency: note, duration: step * 0.95, volume: volume, wave: .square, decay: 0.88)
+            let partial = tone(frequency: note, duration: step * Float(0.95), volume: volume, wave: .square, decay: 0.88)
             guard let partialSamples = partial.floatChannelData?[0] else { continue }
             let offset = index * stepFrames
             for i in 0..<min(stepFrames, Int(partial.frameLength)) where offset + i < Int(frameCount) {
@@ -182,7 +182,7 @@ private extension AVAudioPCMBuffer {
         for i in 0..<Int(count) {
             let av = i < Int(frameLength) ? a[i] : 0
             let bv = i < Int(other.frameLength) ? b[i] : 0
-            out[i] = max(-1, min(1, av + bv))
+            out[i] = max(Float(-1), min(Float(1), av + bv))
         }
         return buffer
     }

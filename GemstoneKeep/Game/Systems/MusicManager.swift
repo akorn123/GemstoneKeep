@@ -123,7 +123,7 @@ final class MusicManager {
                 let sample: Float
                 switch wave {
                 case .triangle:
-                    sample = 2 * abs(2 * (phase / (2 * .pi) - floor(phase / (2 * .pi) + 0.5))) - 1
+                    sample = 2 * abs(2 * (phase / (2 * Float.pi) - floor(phase / (2 * Float.pi) + 0.5))) - 1
                 case .square:
                     sample = sin(phase) >= 0 ? 1 : -1
                 }
