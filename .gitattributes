@@ -1,0 +1,20 @@
+# Xcode / Apple project files must use LF for macOS tooling.
+*.pbxproj text eol=lf
+*.xcscheme text eol=lf
+*.plist text eol=lf
+*.storyboard text eol=lf
+*.xcprivacy text eol=lf
+
+# Swift source
+*.swift text eol=lf
+
+# JSON / markdown
+*.json text eol=lf
+*.md text eol=lf
+
+# Shell / python scripts
+*.sh text eol=lf
+*.py text eol=lf
+
+# Binary assets
+*.png binary

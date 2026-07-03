@@ -16,13 +16,10 @@ jobs:
       - name: Xcode version
         run: xcodebuild -version
 
-      - name: List schemes
-        run: xcodebuild -list -project GemstoneKeep.xcodeproj
-
       - name: Build for iOS Simulator
         run: |
           xcodebuild build \
             -project GemstoneKeep.xcodeproj \
-            -target GemstoneKeep \
+            -scheme GemstoneKeep \
             -sdk iphonesimulator \
             -configuration Debug
