@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000001 /* AppDelegate.swift */; };
+		A10000000000000000000002 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* SceneDelegate.swift */; };
+		A10000000000000000000003 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000003 /* GameViewController.swift */; };
+		A10000000000000000000004 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000004 /* GameScene.swift */; };
+		A10000000000000000000005 /* IsoMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* IsoMath.swift */; };
+		A10000000000000000000006 /* IsoMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* IsoMap.swift */; };
+		A10000000000000000000007 /* LevelLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* LevelLoader.swift */; };
+		A10000000000000000000008 /* PlaceholderArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000008 /* PlaceholderArt.swift */; };
+		A10000000000000000000009 /* LevelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000009 /* LevelData.swift */; };
+		A1000000000000000000000A /* Rook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000A /* Rook.swift */; };
+		A1000000000000000000000B /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000B /* CameraController.swift */; };
+		A1000000000000000000000C /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000C /* InputController.swift */; };
+		A1000000000000000000000D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000D /* Assets.xcassets */; };
+		A1000000000000000000000E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000E /* LaunchScreen.storyboard */; };
+		A1000000000000000000000F /* level01.json in Resources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000F /* level01.json */; };
+		A10000000000000000000010 /* MovementSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000012 /* MovementSystem.swift */; };
+		A10000000000000000000011 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000013 /* HapticsManager.swift */; };
+		A10000000000000000000012 /* Gem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000014 /* Gem.swift */; };
+		A10000000000000000000013 /* GemField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000015 /* GemField.swift */; };
+		A10000000000000000000014 /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000016 /* ScoreManager.swift */; };
+		A10000000000000000000015 /* LevelClearOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000017 /* LevelClearOverlay.swift */; };
+		A10000000000000000000016 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000018 /* AudioManager.swift */; };
+		A10000000000000000000017 /* Gloomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000019 /* Gloomer.swift */; };
+		A10000000000000000000018 /* EnemySystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001A /* EnemySystem.swift */; };
+		A10000000000000000000019 /* LivesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001B /* LivesManager.swift */; };
+		A1000000000000000000001A /* GameOverOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001C /* GameOverOverlay.swift */; };
+		A1000000000000000000001B /* GridMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001D /* GridMover.swift */; };
+		A1000000000000000000001C /* Pathfinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001E /* Pathfinder.swift */; };
+		A1000000000000000000001D /* Stalker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001F /* Stalker.swift */; };
+		A1000000000000000000001E /* Warden.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000020 /* Warden.swift */; };
+		A1000000000000000000001F /* Swarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000021 /* Swarm.swift */; };
+		A10000000000000000000020 /* LevelTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000022 /* LevelTimer.swift */; };
+		A10000000000000000000021 /* PowerUpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000023 /* PowerUpManager.swift */; };
+		A10000000000000000000022 /* PickupField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000024 /* PickupField.swift */; };
+		A10000000000000000000023 /* MiniMapNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000025 /* MiniMapNode.swift */; };
+		A10000000000000000000024 /* LevelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000026 /* LevelBuilder.swift */; };
+		A10000000000000000000025 /* LevelCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000027 /* LevelCatalog.swift */; };
+		A10000000000000000000026 /* DifficultyScaler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000028 /* DifficultyScaler.swift */; };
+		A10000000000000000000027 /* SecretWarpTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000029 /* SecretWarpTracker.swift */; };
+		A10000000000000000000028 /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000002A /* GameSettings.swift */; };
+		A10000000000000000000029 /* PlayerProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000002B /* PlayerProgress.swift */; };
+		A1000000000000000000002A /* GameCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000002C /* GameCenterManager.swift */; };
+		A1000000000000000000002B /* AchievementTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000002D /* AchievementTracker.swift */; };
+		A1000000000000000000002C /* SettingsOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000002E /* SettingsOverlay.swift */; };
+		A1000000000000000000002D /* TitleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000002F /* TitleScene.swift */; };
+		A1000000000000000000002E /* LevelIntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000030 /* LevelIntroController.swift */; };
+		A1000000000000000000002F /* CRTEffectNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000031 /* CRTEffectNode.swift */; };
+		A10000000000000000000030 /* GemSparkleBurst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000032 /* GemSparkleBurst.swift */; };
+		A10000000000000000000031 /* PerformanceTuner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000033 /* PerformanceTuner.swift */; };
+		A10000000000000000000032 /* SynthAudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000034 /* SynthAudioEngine.swift */; };
+		A10000000000000000000033 /* MusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000035 /* MusicManager.swift */; };
+		A10000000000000000000034 /* GameArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000036 /* GameArt.swift */; };
+		A10000000000000000000035 /* CreditsOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000037 /* CreditsOverlay.swift */; };
+		A10000000000000000000036 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000038 /* PrivacyInfo.xcprivacy */; };
+		A10000000000000000000037 /* AugmentCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000039 /* AugmentCatalog.swift */; };
+		A10000000000000000000038 /* RunState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000003A /* RunState.swift */; };
+		A10000000000000000000039 /* MetaProgression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000003B /* MetaProgression.swift */; };
+		A1000000000000000000003A /* ExitResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000003C /* ExitResolver.swift */; };
+		A1000000000000000000003B /* ExitPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000003D /* ExitPortal.swift */; };
+		A1000000000000000000003C /* ShopOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000003E /* ShopOverlay.swift */; };
+		A1000000000000000000003D /* CampOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000003F /* CampOverlay.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A20000000000000000000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A20000000000000000000002 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A20000000000000000000003 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		A20000000000000000000004 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		A20000000000000000000005 /* IsoMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsoMath.swift; sourceTree = "<group>"; };
+		A20000000000000000000006 /* IsoMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsoMap.swift; sourceTree = "<group>"; };
+		A20000000000000000000007 /* LevelLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelLoader.swift; sourceTree = "<group>"; };
+		A20000000000000000000008 /* PlaceholderArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderArt.swift; sourceTree = "<group>"; };
+		A20000000000000000000009 /* LevelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelData.swift; sourceTree = "<group>"; };
+		A2000000000000000000000A /* Rook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rook.swift; sourceTree = "<group>"; };
+		A2000000000000000000000B /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		A2000000000000000000000C /* InputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
+		A2000000000000000000000D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2000000000000000000000E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2000000000000000000000F /* level01.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = level01.json; sourceTree = "<group>"; };
+		A20000000000000000000010 /* GemstoneKeep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GemstoneKeep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000000000000000000011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000000000000000000012 /* MovementSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementSystem.swift; sourceTree = "<group>"; };
+		A20000000000000000000013 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		A20000000000000000000014 /* Gem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gem.swift; sourceTree = "<group>"; };
+		A20000000000000000000015 /* GemField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemField.swift; sourceTree = "<group>"; };
+		A20000000000000000000016 /* ScoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
+		A20000000000000000000017 /* LevelClearOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelClearOverlay.swift; sourceTree = "<group>"; };
+		A20000000000000000000018 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		A20000000000000000000019 /* Gloomer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gloomer.swift; sourceTree = "<group>"; };
+		A2000000000000000000001A /* EnemySystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemySystem.swift; sourceTree = "<group>"; };
+		A2000000000000000000001B /* LivesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivesManager.swift; sourceTree = "<group>"; };
+		A2000000000000000000001C /* GameOverOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverOverlay.swift; sourceTree = "<group>"; };
+		A2000000000000000000001D /* GridMover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridMover.swift; sourceTree = "<group>"; };
+		A2000000000000000000001E /* Pathfinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pathfinder.swift; sourceTree = "<group>"; };
+		A2000000000000000000001F /* Stalker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stalker.swift; sourceTree = "<group>"; };
+		A20000000000000000000020 /* Warden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warden.swift; sourceTree = "<group>"; };
+		A20000000000000000000021 /* Swarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swarm.swift; sourceTree = "<group>"; };
+		A20000000000000000000022 /* LevelTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelTimer.swift; sourceTree = "<group>"; };
+		A20000000000000000000023 /* PowerUpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerUpManager.swift; sourceTree = "<group>"; };
+		A20000000000000000000024 /* PickupField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupField.swift; sourceTree = "<group>"; };
+		A20000000000000000000025 /* MiniMapNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMapNode.swift; sourceTree = "<group>"; };
+		A20000000000000000000026 /* LevelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelBuilder.swift; sourceTree = "<group>"; };
+		A20000000000000000000027 /* LevelCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelCatalog.swift; sourceTree = "<group>"; };
+		A20000000000000000000028 /* DifficultyScaler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyScaler.swift; sourceTree = "<group>"; };
+		A20000000000000000000029 /* SecretWarpTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretWarpTracker.swift; sourceTree = "<group>"; };
+		A2000000000000000000002A /* GameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
+		A2000000000000000000002B /* PlayerProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProgress.swift; sourceTree = "<group>"; };
+		A2000000000000000000002C /* GameCenterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterManager.swift; sourceTree = "<group>"; };
+		A2000000000000000000002D /* AchievementTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementTracker.swift; sourceTree = "<group>"; };
+		A2000000000000000000002E /* SettingsOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOverlay.swift; sourceTree = "<group>"; };
+		A2000000000000000000002F /* TitleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScene.swift; sourceTree = "<group>"; };
+		A20000000000000000000030 /* LevelIntroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelIntroController.swift; sourceTree = "<group>"; };
+		A20000000000000000000031 /* CRTEffectNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRTEffectNode.swift; sourceTree = "<group>"; };
+		A20000000000000000000032 /* GemSparkleBurst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemSparkleBurst.swift; sourceTree = "<group>"; };
+		A20000000000000000000033 /* PerformanceTuner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTuner.swift; sourceTree = "<group>"; };
+		A20000000000000000000034 /* SynthAudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthAudioEngine.swift; sourceTree = "<group>"; };
+		A20000000000000000000035 /* MusicManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicManager.swift; sourceTree = "<group>"; };
+		A20000000000000000000036 /* GameArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameArt.swift; sourceTree = "<group>"; };
+		A20000000000000000000037 /* CreditsOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsOverlay.swift; sourceTree = "<group>"; };
+		A20000000000000000000038 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		A20000000000000000000039 /* AugmentCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentCatalog.swift; sourceTree = "<group>"; };
+		A2000000000000000000003A /* RunState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunState.swift; sourceTree = "<group>"; };
+		A2000000000000000000003B /* MetaProgression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaProgression.swift; sourceTree = "<group>"; };
+		A2000000000000000000003C /* ExitResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitResolver.swift; sourceTree = "<group>"; };
+		A2000000000000000000003D /* ExitPortal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitPortal.swift; sourceTree = "<group>"; };
+		A2000000000000000000003E /* ShopOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopOverlay.swift; sourceTree = "<group>"; };
+		A2000000000000000000003F /* CampOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampOverlay.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A40000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000002 /* GemstoneKeep */,
+				A40000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A40000000000000000000002 /* GemstoneKeep */ = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000004 /* App */,
+				A40000000000000000000005 /* Game */,
+				A40000000000000000000009 /* UI */,
+				A2000000000000000000000D /* Assets.xcassets */,
+				A2000000000000000000000E /* LaunchScreen.storyboard */,
+				A20000000000000000000011 /* Info.plist */,
+				A20000000000000000000038 /* PrivacyInfo.xcprivacy */,
+			);
+			path = GemstoneKeep;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000010 /* GemstoneKeep.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000004 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000001 /* AppDelegate.swift */,
+				A20000000000000000000002 /* SceneDelegate.swift */,
+				A20000000000000000000003 /* GameViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000005 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000004 /* GameScene.swift */,
+				A20000000000000000000005 /* IsoMath.swift */,
+				A20000000000000000000006 /* IsoMap.swift */,
+				A20000000000000000000007 /* LevelLoader.swift */,
+				A20000000000000000000008 /* PlaceholderArt.swift */,
+				A40000000000000000000006 /* Entities */,
+				A4000000000000000000000A /* Effects */,
+				A4000000000000000000000B /* Art */,
+				A40000000000000000000007 /* Systems */,
+				A40000000000000000000008 /* Levels */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000006 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000A /* Rook.swift */,
+				A20000000000000000000014 /* Gem.swift */,
+				A20000000000000000000019 /* Gloomer.swift */,
+				A2000000000000000000001F /* Stalker.swift */,
+				A20000000000000000000020 /* Warden.swift */,
+				A20000000000000000000021 /* Swarm.swift */,
+				A2000000000000000000003D /* ExitPortal.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000007 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000B /* CameraController.swift */,
+				A2000000000000000000000C /* InputController.swift */,
+				A20000000000000000000012 /* MovementSystem.swift */,
+				A20000000000000000000013 /* HapticsManager.swift */,
+				A20000000000000000000015 /* GemField.swift */,
+				A20000000000000000000016 /* ScoreManager.swift */,
+				A20000000000000000000018 /* AudioManager.swift */,
+				A2000000000000000000001A /* EnemySystem.swift */,
+				A2000000000000000000001B /* LivesManager.swift */,
+				A2000000000000000000001D /* GridMover.swift */,
+				A2000000000000000000001E /* Pathfinder.swift */,
+				A20000000000000000000022 /* LevelTimer.swift */,
+				A20000000000000000000023 /* PowerUpManager.swift */,
+				A20000000000000000000024 /* PickupField.swift */,
+				A20000000000000000000028 /* DifficultyScaler.swift */,
+				A20000000000000000000029 /* SecretWarpTracker.swift */,
+				A2000000000000000000002A /* GameSettings.swift */,
+				A2000000000000000000002B /* PlayerProgress.swift */,
+				A2000000000000000000002C /* GameCenterManager.swift */,
+				A2000000000000000000002D /* AchievementTracker.swift */,
+				A20000000000000000000030 /* LevelIntroController.swift */,
+				A20000000000000000000033 /* PerformanceTuner.swift */,
+				A20000000000000000000034 /* SynthAudioEngine.swift */,
+				A20000000000000000000035 /* MusicManager.swift */,
+				A20000000000000000000039 /* AugmentCatalog.swift */,
+				A2000000000000000000003A /* RunState.swift */,
+				A2000000000000000000003B /* MetaProgression.swift */,
+				A2000000000000000000003C /* ExitResolver.swift */,
+			);
+			path = Systems;
+			sourceTree = "<group>";
+		};
+		A4000000000000000000000B /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000036 /* GameArt.swift */,
+			);
+			path = Art;
+			sourceTree = "<group>";
+		};
+		A4000000000000000000000A /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000032 /* GemSparkleBurst.swift */,
+			);
+			path = Effects;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000009 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000017 /* LevelClearOverlay.swift */,
+				A2000000000000000000001C /* GameOverOverlay.swift */,
+				A20000000000000000000025 /* MiniMapNode.swift */,
+				A2000000000000000000002E /* SettingsOverlay.swift */,
+				A2000000000000000000002F /* TitleScene.swift */,
+				A20000000000000000000031 /* CRTEffectNode.swift */,
+				A20000000000000000000037 /* CreditsOverlay.swift */,
+				A2000000000000000000003E /* ShopOverlay.swift */,
+				A2000000000000000000003F /* CampOverlay.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000008 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000009 /* LevelData.swift */,
+				A20000000000000000000026 /* LevelBuilder.swift */,
+				A20000000000000000000027 /* LevelCatalog.swift */,
+				A2000000000000000000000F /* level01.json */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50000000000000000000001 /* GemstoneKeep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70000000000000000000003 /* Build configuration list for PBXNativeTarget "GemstoneKeep" */;
+			buildPhases = (
+				A60000000000000000000001 /* Sources */,
+				A30000000000000000000001 /* Frameworks */,
+				A60000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GemstoneKeep;
+			productName = GemstoneKeep;
+			productReference = A20000000000000000000010 /* GemstoneKeep.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A80000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A50000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A70000000000000000000001 /* Build configuration list for PBXProject "GemstoneKeep" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A40000000000000000000001;
+			productRefGroup = A40000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A50000000000000000000001 /* GemstoneKeep */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A60000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000000D /* Assets.xcassets in Resources */,
+				A1000000000000000000000E /* LaunchScreen.storyboard in Resources */,
+				A1000000000000000000000F /* level01.json in Resources */,
+				A10000000000000000000036 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* AppDelegate.swift in Sources */,
+				A10000000000000000000002 /* SceneDelegate.swift in Sources */,
+				A10000000000000000000003 /* GameViewController.swift in Sources */,
+				A10000000000000000000004 /* GameScene.swift in Sources */,
+				A10000000000000000000005 /* IsoMath.swift in Sources */,
+				A10000000000000000000006 /* IsoMap.swift in Sources */,
+				A10000000000000000000007 /* LevelLoader.swift in Sources */,
+				A10000000000000000000008 /* PlaceholderArt.swift in Sources */,
+				A10000000000000000000009 /* LevelData.swift in Sources */,
+				A1000000000000000000000A /* Rook.swift in Sources */,
+				A1000000000000000000000B /* CameraController.swift in Sources */,
+				A1000000000000000000000C /* InputController.swift in Sources */,
+				A10000000000000000000010 /* MovementSystem.swift in Sources */,
+				A10000000000000000000011 /* HapticsManager.swift in Sources */,
+				A10000000000000000000012 /* Gem.swift in Sources */,
+				A10000000000000000000013 /* GemField.swift in Sources */,
+				A10000000000000000000014 /* ScoreManager.swift in Sources */,
+				A10000000000000000000015 /* LevelClearOverlay.swift in Sources */,
+				A10000000000000000000016 /* AudioManager.swift in Sources */,
+				A10000000000000000000017 /* Gloomer.swift in Sources */,
+				A10000000000000000000018 /* EnemySystem.swift in Sources */,
+				A10000000000000000000019 /* LivesManager.swift in Sources */,
+				A1000000000000000000001A /* GameOverOverlay.swift in Sources */,
+				A1000000000000000000001B /* GridMover.swift in Sources */,
+				A1000000000000000000001C /* Pathfinder.swift in Sources */,
+				A1000000000000000000001D /* Stalker.swift in Sources */,
+				A1000000000000000000001E /* Warden.swift in Sources */,
+				A1000000000000000000001F /* Swarm.swift in Sources */,
+				A10000000000000000000020 /* LevelTimer.swift in Sources */,
+				A10000000000000000000021 /* PowerUpManager.swift in Sources */,
+				A10000000000000000000022 /* PickupField.swift in Sources */,
+				A10000000000000000000023 /* MiniMapNode.swift in Sources */,
+				A10000000000000000000024 /* LevelBuilder.swift in Sources */,
+				A10000000000000000000025 /* LevelCatalog.swift in Sources */,
+				A10000000000000000000026 /* DifficultyScaler.swift in Sources */,
+				A10000000000000000000027 /* SecretWarpTracker.swift in Sources */,
+				A10000000000000000000028 /* GameSettings.swift in Sources */,
+				A10000000000000000000029 /* PlayerProgress.swift in Sources */,
+				A1000000000000000000002A /* GameCenterManager.swift in Sources */,
+				A1000000000000000000002B /* AchievementTracker.swift in Sources */,
+				A1000000000000000000002C /* SettingsOverlay.swift in Sources */,
+				A1000000000000000000002D /* TitleScene.swift in Sources */,
+				A1000000000000000000002E /* LevelIntroController.swift in Sources */,
+				A1000000000000000000002F /* CRTEffectNode.swift in Sources */,
+				A10000000000000000000030 /* GemSparkleBurst.swift in Sources */,
+				A10000000000000000000031 /* PerformanceTuner.swift in Sources */,
+				A10000000000000000000032 /* SynthAudioEngine.swift in Sources */,
+				A10000000000000000000033 /* MusicManager.swift in Sources */,
+				A10000000000000000000034 /* GameArt.swift in Sources */,
+				A10000000000000000000035 /* CreditsOverlay.swift in Sources */,
+				A10000000000000000000037 /* AugmentCatalog.swift in Sources */,
+				A10000000000000000000038 /* RunState.swift in Sources */,
+				A10000000000000000000039 /* MetaProgression.swift in Sources */,
+				A1000000000000000000003A /* ExitResolver.swift in Sources */,
+				A1000000000000000000003B /* ExitPortal.swift in Sources */,
+				A1000000000000000000003C /* ShopOverlay.swift in Sources */,
+				A1000000000000000000003D /* CampOverlay.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A90000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A90000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A90000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GemstoneKeep/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gemstonekeep.GemstoneKeep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A90000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GemstoneKeep/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gemstonekeep.GemstoneKeep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A70000000000000000000001 /* Build configuration list for PBXProject "GemstoneKeep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90000000000000000000001 /* Debug */,
+				A90000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70000000000000000000003 /* Build configuration list for PBXNativeTarget "GemstoneKeep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90000000000000000000003 /* Debug */,
+				A90000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A80000000000000000000001 /* Project object */;
+}
