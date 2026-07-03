@@ -16,14 +16,13 @@ jobs:
       - name: Xcode version
         run: xcodebuild -version
 
+      - name: List schemes
+        run: xcodebuild -list -project GemstoneKeep.xcodeproj
+
       - name: Build for iOS Simulator
         run: |
           xcodebuild build \
             -project GemstoneKeep.xcodeproj \
-            -scheme GemstoneKeep \
+            -target GemstoneKeep \
             -sdk iphonesimulator \
-            -configuration Debug \
-            CODE_SIGN_IDENTITY="" \
-            CODE_SIGNING_REQUIRED=NO \
-            CODE_SIGNING_ALLOWED=NO \
-            DEVELOPMENT_TEAM=""
+            -configuration Debug
